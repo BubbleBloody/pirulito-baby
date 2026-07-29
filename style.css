@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: cascadia code;
+    color: purple;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(206, 255, 255);
+    gap: 100px;
+}
+
+h1{
+    text-align: center;
+}
+
+.circle{
+    background-color: palevioletred;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.palito{
+    background-color: beige;
+    height: 300px;
+    width: 20px;
+}
+
+#pirulito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: balançar 2.0s infinite ease-out;
+}
+@keyframes balançar{
+    0%{
+        transform: rotateZ(0);
+    }
+    25%{
+        transform: rotateZ(25deg);
+    }
+    50%{
+        transform: rotateZ(0);
+    }
+    75%{
+        transform: rotateZ(-25deg);
+    }
+    100%{
+        transform: rotateZ(0);
+    }
+}
+
+.barra{
+    width: 115%;
+    height: 25px;
+    border-radius: 8px;
+    background-color: palevioletred;
+    border: 5px solid rgb(194, 97, 129);
+}
