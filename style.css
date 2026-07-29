@@ -69,3 +69,10 @@ h1{
     background-color: palevioletred;
     border: 5px solid rgb(194, 97, 129);
 }
+
+#frase{
+    font-size: 1vh;
+    position: absolute;
+    z-index: 999;
+    opacity: 0.15;
+}

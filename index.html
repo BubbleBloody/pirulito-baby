@@ -11,6 +11,8 @@
 
     <h1>Você é meu pirulito-baby</h1>
 
+    <p id="frase">Clique em mim c:</p>
+
     <div id="pirulito">
         <div class="circle"><div class="barra"></div></div>
         <div class="palito"></div>
@@ -18,7 +20,15 @@
 
     <h1>Eu te amo muito minha Xululuquinha </h1>
 
-    <audio src="pirulito_baby.mp3" autoplay loop></audio>
-    
+    <audio id="musica" src="pirulito_baby.mp3" loop></audio>
+
+<script>
+
+    document.addEventListener('click', function() {var audio = document.getElementById('musica');
+        audio.play();
+    }, { once: true });
+
+</script>    
+
 </body>
 </html>
