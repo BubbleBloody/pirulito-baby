@@ -13,7 +13,7 @@
 
     <p id="frase">Clique em mim c:</p>
 
-    <div id="pirulito">
+    <div id="pirulito" onclick="balancando()">
         <div class="circle"><div class="barra"></div></div>
         <div class="palito"></div>
     </div>
@@ -22,20 +22,7 @@
 
     <audio id="musica" src="pirulito_baby.mp3" loop></audio>
 
-<script>
-
-    let musica = document.getElementById('musica');
-
-    document.addEventListener('click', function() {
-        if(musica.paused){
-            
-            musica.play();
-
-        }else{
-
-            musica.pause();
-        }
-    });
+<script src="script.js">
 
 </script>    
 
