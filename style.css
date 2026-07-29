@@ -13,18 +13,18 @@ body{
     align-items: center;
     justify-content: center;
     background-color: rgb(206, 255, 255);
-    gap: 100px;
+    gap: 50px;
 }
 
-h1{
+h2{
     text-align: center;
 }
 
 .circle{
     background-color: palevioletred;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,8 +33,8 @@ h1{
 
 .palito{
     background-color: beige;
-    height: 300px;
-    width: 20px;
+    height: 150px;
+    width: 10px;
 }
 
 #pirulito{
@@ -49,13 +49,13 @@ h1{
         transform: rotateZ(0);
     }
     25%{
-        transform: rotateZ(25deg);
+        transform: rotateZ(30deg);
     }
     50%{
         transform: rotateZ(0);
     }
     75%{
-        transform: rotateZ(-25deg);
+        transform: rotateZ(-30deg);
     }
     100%{
         transform: rotateZ(0);
@@ -63,11 +63,11 @@ h1{
 }
 
 .barra{
-    width: 115%;
-    height: 25px;
+    width: 120%;
+    height: 16%;
     border-radius: 8px;
     background-color: palevioletred;
-    border: 5px solid rgb(194, 97, 129);
+    border: 3px solid rgb(194, 97, 129);
 }
 
 #frase{

@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <h1>Você é meu pirulito-baby</h1>
+    <h2>Você é meu pirulito-baby</h1>
 
     <p id="frase">Clique em mim c:</p>
 
@@ -18,15 +18,24 @@
         <div class="palito"></div>
     </div>
 
-    <h1>Eu te amo muito minha Xululuquinha </h1>
+    <h2>Eu te amo muito minha Xululuquinha </h1>
 
     <audio id="musica" src="pirulito_baby.mp3" loop></audio>
 
 <script>
 
-    document.addEventListener('click', function() {var audio = document.getElementById('musica');
-        audio.play();
-    }, { once: true });
+    let musica = document.getElementById('musica');
+
+    document.addEventListener('click', function() {
+        if(musica.paused){
+            
+            musica.play();
+
+        }else{
+
+            musica.pause();
+        }
+    });
 
 </script>    
 
